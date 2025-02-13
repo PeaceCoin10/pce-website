@@ -6,6 +6,28 @@ body {
   background-color: #f4f4f4;
 }
 
+/* Header Section */
+header {
+  background-color: #1d3557;
+  padding: 20px;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
 /* Home Page Styles */
 .home-section {
   background-color: #2b7a78;
@@ -30,28 +52,6 @@ body {
   text-decoration: none;
   font-size: 20px;
   border-radius: 5px;
-}
-
-/* Navigation Styles */
-nav {
-  background-color: #1d3557;
-  padding: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
 }
 
 /* Content Sections */
@@ -91,4 +91,15 @@ section p {
   text-decoration: none;
   font-size: 18px;
   border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #1d3557;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
