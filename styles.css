@@ -11,7 +11,7 @@ body {
 
 /* Header Section */
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 10; /* Ensure it stays on top of the background */
@@ -19,7 +19,8 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  background-color: rgba(43, 122, 120, 0.8); /* Transparent background */
+  background-color: transparent; /* Transparent background */
+  color: white;
 }
 
 header nav ul {
@@ -54,7 +55,6 @@ header nav ul li a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
 }
 
 .hero-content h1 {
@@ -86,11 +86,11 @@ section {
   padding: 60px 20px;
   text-align: center;
   margin: 10px 0;
+  color: #fff;
 }
 
-.section-about, .section-whitepaper, .section-contact {
-  background-color: #2b7a78;
-  color: #fff;
+.section-about, .section-whitepaper, .section-contact, .section-laws, .section-partners {
+  background-color: transparent;
 }
 
 .section-content h2 {
@@ -130,6 +130,8 @@ footer {
     flex-direction: column;
     gap: 15px;
   }
+}
+
 }
 
 
