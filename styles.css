@@ -4,26 +4,18 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #fff;
+  color: #333;
   line-height: 1.6;
 }
 
 /* Header Section */
 header {
-  background-color: #2b7a78;
-  padding: 20px 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-
-header .logo-container {
-  padding-left: 20px;
-}
-
-header .logo {
-  width: 200px; /* Adjust logo size */
+  padding: 20px 0;
+  background-color: #2b7a78;
 }
 
 header nav ul {
@@ -31,7 +23,6 @@ header nav ul {
   padding: 0;
   display: flex;
   gap: 20px;
-  justify-content: center;
 }
 
 header nav ul li a {
@@ -46,22 +37,9 @@ header nav ul li a:hover {
   border-radius: 5px;
 }
 
-.banner {
-  background-color: #e63946;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 16px;
-  z-index: 10;
-}
-
 /* Hero Section */
 .hero-section {
-  background-image: url('images/hero-bg.png'); /* Background image for hero section */
+  background-image: url('images/hero-bg.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -71,7 +49,7 @@ header nav ul li a:hover {
 }
 
 .hero-content h1 {
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
@@ -94,16 +72,14 @@ header nav ul li a:hover {
   color: #1d3557;
 }
 
-/* Section Styles */
-section {
+/* About Section */
+.section-about {
+  background-image: url('images/about-bg.png');
+  background-size: cover;
+  background-position: center;
   padding: 60px 20px;
-  background-color: #1d3557;
   text-align: center;
-  margin: 10px 0;
-}
-
-.section-about, .section-whitepaper, .section-contact {
-  background-color: #2b7a78;
+  color: #fff;
 }
 
 .section-content h2 {
@@ -144,6 +120,3 @@ footer {
   }
 }
 
-  width: 200px; /* Adjust logo size */
-  margin-bottom: 30px;
-}
