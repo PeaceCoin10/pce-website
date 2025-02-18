@@ -1,16 +1,15 @@
 /* General Styles */
-body {
-  font-family: Arial, sans-serif;
+html, body {
   margin: 0;
   padding: 0;
-  background-image: url('images/hero-bg.png'); /* Set background image for the whole page */
+  height: 100%;
+  background-image: url('images/hero-bg.png'); /* Set background image for the entire page */
   background-size: cover; /* Ensure background covers entire screen */
   background-position: center; /* Center the background */
-  background-attachment: fixed; /* Fix the background to the viewport */
+  background-attachment: fixed; /* Fix the background so it stays in place */
   color: #333;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  overflow-x: hidden;
-  position: relative;
 }
 
 /* Header Section */
@@ -57,8 +56,6 @@ header nav ul li a:hover {
   flex-direction: column;
   padding: 20px;
   position: relative;
-  z-index: 1;
-  /* No background here, because it's set globally in the body */
 }
 
 .hero-content {
@@ -99,7 +96,7 @@ section {
   text-align: center;
   margin: 10px 0;
   color: #fff;
-  background-color: transparent; /* Keep the sections transparent to show the global background */
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,6 +145,7 @@ footer {
     gap: 15px;
   }
 }
+
 
 
 
