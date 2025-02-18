@@ -9,13 +9,27 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Fullscreen Background */
+/* Banner Section */
+.banner {
+  background-color: #2b7a78;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 18px;
+  z-index: 10; /* Ensure it's on top of the page */
+}
+
+/* Hero Section */
 .hero-section {
   background-image: url('images/hero-bg.png');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Fixed background */
   height: 100vh;
-  position: relative;
   text-align: center;
   color: white;
   display: flex;
