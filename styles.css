@@ -15,12 +15,12 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 10; /* Ensure it stays on top of the background */
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  background-color: transparent; /* Transparent background */
+  background-color: transparent;
   color: white;
 }
 
@@ -48,7 +48,7 @@ header nav ul li a:hover {
   background-image: url('images/hero-bg.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Background stays fixed while scrolling */
+  background-attachment: fixed;
   height: 100vh;
   text-align: center;
   color: white;
@@ -57,7 +57,7 @@ header nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   padding: 20px;
-  position: relative; /* Keep it on top of the content */
+  position: relative;
 }
 
 .hero-content h1 {
@@ -90,7 +90,7 @@ section {
   text-align: center;
   margin: 10px 0;
   color: #fff;
-  background-color: transparent; /* Transparent background for all sections */
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +98,7 @@ section {
 }
 
 .section-about, .section-whitepaper, .section-contact, .section-laws, .section-partners {
-  background-color: transparent; /* Transparent background */
+  background-color: transparent;
 }
 
 .section-content h2 {
@@ -139,6 +139,7 @@ footer {
     gap: 15px;
   }
 }
+
 
 
 
