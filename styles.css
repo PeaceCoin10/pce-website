@@ -74,7 +74,7 @@ header nav ul li a:hover {
 
 /* About Section */
 .section-about {
-  background-image: url('images/about-bg.png');
+  background-image: url('images/about-bg.png'); /* Updated for the About section background */
   background-size: cover;
   background-position: center;
   padding: 60px 20px;
