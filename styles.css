@@ -1,31 +1,48 @@
 /* General Styles */
-body {
-  font-family: Arial, sans-serif;
+html, body {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333; /* Dark text for better readability */
-  line-height: 1.6;
-  overflow-x: hidden;
-  position: relative;
-}
-
-/* Hero Section */
-.hero-section {
+  height: 100%;
   background-image: url('images/hero-bg.png');
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  text-align: center;
-  color: white;
+  background-attachment: fixed;
+  color: #333; /* Dark text color for better readability */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 20px;
-  position: relative;
-  z-index: 1;
-  background-attachment: scroll;
+  padding: 20px 0;
+  background-color: transparent;
+  color: white;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+header nav ul li a:hover {
+  background-color: #e63946;
+  border-radius: 5px;
 }
 
 /* Section Styles */
@@ -33,7 +50,7 @@ section {
   padding: 60px 20px;
   text-align: center;
   margin: 10px 0;
-  color: #333; /* Dark text for better readability */
+  color: #333; /* Dark text color for readability */
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -41,36 +58,68 @@ section {
   flex-direction: column;
 }
 
-/* Partners Section */
-.partners-logos {
+.section-about, .section-whitepaper, .section-contact, .section-laws, .section-partners, .section-smart-contract {
+  background-color: transparent;
+}
+
+.section-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section-content p, .section-content ul {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.partner-logos {
   display: flex;
-  gap: 30px;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.partners-logos img {
-  width: 150px;
+.partner-logo {
+  width: 100px;
   height: auto;
-  max-width: 100%;
 }
 
-/* Other Styles (button and text color updates) */
-.cta-btn {
-  background-color: #e63946;
+/* Footer Styles */
+footer {
+  background-color: #2b7a78;
+  text-align: center;
+  padding: 20px 0;
   color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 5px;
 }
 
-.cta-btn:hover {
-  background-color: #f1faee;
-  color: #1d3557;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .cta-btn {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
-
-
 
 
 
