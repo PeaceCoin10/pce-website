@@ -61,7 +61,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero-section {
-  background-image: url('images/hero-bg.png'); /* Updated to match correct folder path */
+  background-image: url('images/hero-bg.png'); /* Background image for hero section */
   background-size: cover;
   background-position: center;
   height: 100vh;
