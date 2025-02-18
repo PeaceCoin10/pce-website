@@ -43,12 +43,11 @@ header nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* Hero Section (Fixed Background Image) */
+/* Hero Section (Background Image with Scroll) */
 .hero-section {
   background-image: url('images/hero-bg.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   height: 100vh;
   text-align: center;
   color: white;
@@ -58,15 +57,17 @@ header nav ul li a:hover {
   flex-direction: column;
   padding: 20px;
   position: relative;
-  z-index: 1; /* Ensure it sits below other content */
+  z-index: 1;
+  background-attachment: scroll; /* Change from fixed to scroll to make it scrollable */
 }
 
+/* Content Section */
 .hero-content {
   position: relative;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
   border-radius: 10px;
-  z-index: 2; /* Ensure text stays above background */
+  z-index: 2;
 }
 
 .hero-content h1 {
@@ -148,6 +149,7 @@ footer {
     gap: 15px;
   }
 }
+
 
 
 
