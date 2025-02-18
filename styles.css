@@ -9,18 +9,36 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Banner Section */
-.banner {
-  background-color: #2b7a78;
-  color: white;
-  padding: 20px;
-  text-align: center;
+/* Header Section */
+header {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
+  top: 0;
+  z-index: 10; /* Ensure it stays on top of the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: rgba(43, 122, 120, 0.8); /* Transparent background */
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
   font-size: 18px;
-  z-index: 10; /* Ensure it's on top of the page */
+  padding: 10px;
+}
+
+header nav ul li a:hover {
+  background-color: #e63946;
+  border-radius: 5px;
 }
 
 /* Hero Section */
@@ -28,7 +46,7 @@ body {
   background-image: url('images/hero-bg.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Fixed background */
+  background-attachment: fixed; /* Background stays fixed while scrolling */
   height: 100vh;
   text-align: center;
   color: white;
@@ -36,6 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 }
 
 .hero-content h1 {
@@ -113,6 +132,4 @@ footer {
   }
 }
 
-  }
-}
 
