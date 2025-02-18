@@ -13,17 +13,25 @@ header {
   background-color: #2b7a78;
   padding: 20px 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo-container {
+  padding-left: 20px;
+}
+
+header .logo {
+  width: 200px; /* Adjust logo size */
 }
 
 header nav ul {
   list-style-type: none;
   padding: 0;
-  text-align: center;
-}
-
-header nav ul li {
-  display: inline;
-  margin-right: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 header nav ul li a {
@@ -38,7 +46,20 @@ header nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* Hero Section (Home) */
+.banner {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  z-index: 10;
+}
+
+/* Hero Section */
 .hero-section {
   background-image: url('images/hero-bg.png'); /* Updated to match correct folder path */
   background-size: cover;
@@ -102,7 +123,27 @@ footer {
   color: white;
 }
 
-.logo {
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .cta-btn {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
   width: 200px; /* Adjust logo size */
   margin-bottom: 30px;
 }
