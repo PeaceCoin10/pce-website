@@ -6,50 +6,26 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Header Section */
-header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  background-color: #2b7a78;
-}
-
-header nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-}
-
-header nav ul li a:hover {
-  background-color: #e63946;
-  border-radius: 5px;
-}
-
-/* Hero Section */
+/* Fullscreen Background */
 .hero-section {
   background-image: url('images/hero-bg.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
+  position: relative;
   text-align: center;
   color: white;
-  padding-top: 200px; /* Increased top padding for better spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero-content h1 {
-  font-size: 50px;
+  font-size: 60px;
   margin-bottom: 20px;
 }
 
@@ -72,13 +48,15 @@ header nav ul li a:hover {
   color: #1d3557;
 }
 
-/* About Section */
-.section-about {
-  background-image: url('images/about-bg.png');
-  background-size: cover;
-  background-position: center;
+/* Section Styles */
+section {
   padding: 60px 20px;
   text-align: center;
+  margin: 10px 0;
+}
+
+.section-about, .section-whitepaper, .section-contact {
+  background-color: #2b7a78;
   color: #fff;
 }
 
@@ -92,6 +70,7 @@ header nav ul li a:hover {
   margin-bottom: 20px;
 }
 
+/* Footer Styles */
 footer {
   background-color: #2b7a78;
   text-align: center;
