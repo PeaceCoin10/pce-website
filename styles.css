@@ -57,6 +57,7 @@ header nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  position: relative; /* Keep it on top of the content */
 }
 
 .hero-content h1 {
@@ -138,6 +139,7 @@ footer {
     gap: 15px;
   }
 }
+
 
 
 
