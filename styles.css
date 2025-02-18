@@ -3,16 +3,16 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-image: url('images/hero-bg.png');
+  background-image: url('images/hero-bg.png'); /* Background applied to entire page */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Keeps background fixed during scrolling */
   color: #333; /* Dark text color for better readability */
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
-/* Header Section */
+/* Header Section (Navigation Menu) */
 header {
   position: fixed;
   width: 100%;
@@ -22,7 +22,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the header */
   color: white;
 }
 
@@ -51,7 +51,7 @@ section {
   text-align: center;
   margin: 10px 0;
   color: #333; /* Dark text color for readability */
-  background-color: transparent;
+  background-color: transparent; /* Transparent background for all sections */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,6 +120,7 @@ footer {
     gap: 15px;
   }
 }
+
 
 
 
