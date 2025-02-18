@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #333; /* 深色字体 */
+  color: #333; /* Dark text for better readability */
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
@@ -33,7 +33,7 @@ section {
   padding: 60px 20px;
   text-align: center;
   margin: 10px 0;
-  color: #333; /* 深色字体 */
+  color: #333; /* Dark text for better readability */
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -69,6 +69,7 @@ section {
   background-color: #f1faee;
   color: #1d3557;
 }
+
 
 
 
