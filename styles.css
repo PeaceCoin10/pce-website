@@ -60,6 +60,13 @@ header nav ul li a:hover {
   position: relative;
 }
 
+.hero-content {
+  position: relative;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners for better visual */
+}
+
 .hero-content h1 {
   font-size: 60px;
   margin-bottom: 20px;
