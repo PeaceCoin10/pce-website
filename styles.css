@@ -45,12 +45,12 @@ header nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* Hero Section - Modify the text size and positioning */
+/* Hero Section */
 .hero-section {
   padding: 180px 20px 60px; /* 增加顶部 padding 让文字往下移动 */
   text-align: center;
-  color: white;
   background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  color: white;
 }
 
 .hero-content h1 {
