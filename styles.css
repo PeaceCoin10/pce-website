@@ -48,27 +48,15 @@ header nav ul li a:hover {
 /* Hero Section */
 .hero-section {
   padding: 120px 20px 60px;
-  position: relative; /* 确保背景能覆盖区域 */
-}
-
-.hero-content h1, .hero-content p {
-  margin-top: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 设置高度为视口高度 */
   z-index: 5;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* 给文字加点阴影，增强对比度 */
 }
 
-.hero-content h1 {
-  font-size: 56px;
-  font-weight: bold;
-}
-
-.hero-content p {
-  font-size: 24px;
-  font-weight: 300;
-}
-
-/* Add a semi-transparent background overlay to Hero Section */
+/* Full-screen semi-transparent background */
 .hero-section::before {
   content: '';
   position: absolute;
@@ -76,8 +64,26 @@ header nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 适当增加透明度 */
-  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* 设置一个较轻的全屏半透明背景 */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.hero-content p {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 20px;
 }
 
 /* Section Styles */
@@ -191,6 +197,9 @@ footer {
   header nav ul {
     flex-direction: column;
     gap: 15px;
+  }
+}
+
   }
 }
 
