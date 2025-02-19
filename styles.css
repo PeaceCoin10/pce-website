@@ -36,8 +36,11 @@ header nav ul {
 header nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px; /* 增加字体大小 */
   padding: 10px;
+  font-weight: bold; /* 加粗文字 */
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  border-radius: 5px;
 }
 
 header nav ul li a:hover {
@@ -64,21 +67,28 @@ section {
 }
 
 .section-about h2 {
-  font-size: 40px;
+  font-size: 50px; /* 增加字体大小 */
+  font-weight: bold; /* 加粗文字 */
   margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  padding: 10px;
 }
 
 .section-about p {
-  font-size: 20px;
+  font-size: 24px; /* 增加字体大小 */
+  font-weight: bold; /* 加粗文字 */
   margin-bottom: 20px;
   line-height: 1.8;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  padding: 10px;
 }
 
 .cta-btn {
   background-color: #2b7a78;
   color: white;
   padding: 15px 30px;
-  font-size: 18px;
+  font-size: 20px; /* 增加字体大小 */
+  font-weight: bold; /* 加粗文字 */
   text-decoration: none;
   border-radius: 5px;
 }
@@ -110,19 +120,28 @@ footer {
 
 /* Legal & Smart Contract Sections */
 .section-content h2 {
-  font-size: 36px;
+  font-size: 40px; /* 增加字体大小 */
+  font-weight: bold; /* 加粗文字 */
   margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  padding: 10px;
 }
 
 .section-content p, .section-content ul {
-  font-size: 18px;
+  font-size: 20px; /* 增加字体大小 */
+  font-weight: bold; /* 加粗文字 */
   margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  padding: 10px;
 }
 
 /* Contact Section */
 .contact-info {
-  font-size: 18px;
+  font-size: 20px; /* 增加字体大小 */
+  font-weight: bold; /* 加粗文字 */
   margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  padding: 10px;
 }
 
 /* Responsive Design */
