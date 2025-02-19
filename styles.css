@@ -7,7 +7,7 @@ html, body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #333;
+  color: white; /* All text color set to white */
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
@@ -47,10 +47,10 @@ header nav ul li a:hover {
 
 /* Section Styles */
 section {
-  padding: 60px 20px;
+  padding: 80px 20px; /* Increased padding to move text down */
   text-align: center;
   margin: 10px 0;
-  color: #333; /* Adjusted for readability */
+  color: white;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -70,7 +70,6 @@ section {
 .section-content p, .section-content ul {
   font-size: 18px;
   margin-bottom: 20px;
-  color: #444; /* Soft dark color for text */
 }
 
 ul {
@@ -85,12 +84,12 @@ ul li {
 .partner-logos {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px; /* Increased gap for larger logos */
   margin-top: 30px;
 }
 
 .partner-logo {
-  width: 100px;
+  width: 150px; /* Increased logo size */
   height: auto;
   background-color: transparent;
 }
