@@ -47,22 +47,37 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero-section {
-  padding: 180px 20px 60px; /* 增加顶部 padding 让文字往下移动 */
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  padding: 120px 20px 60px;
+  position: relative; /* 确保背景能覆盖区域 */
+}
+
+.hero-content h1, .hero-content p {
+  margin-top: 50px;
+  z-index: 5;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* 给文字加点阴影，增强对比度 */
 }
 
 .hero-content h1 {
-  font-size: 60px; /* 增大字体 */
-  font-weight: bold; /* 加粗文字 */
-  margin-bottom: 20px; /* 增加文字之间的间距 */
+  font-size: 56px;
+  font-weight: bold;
 }
 
 .hero-content p {
-  font-size: 24px; /* 增大字体 */
-  font-weight: bold; /* 加粗文字 */
-  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* Add a semi-transparent background overlay to Hero Section */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 适当增加透明度 */
+  z-index: 0;
 }
 
 /* Section Styles */
@@ -84,12 +99,13 @@ section {
 }
 
 .section-about h2 {
-  font-size: 40px;
+  font-size: 48px; /* 增加标题字体大小 */
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
 .section-about p {
-  font-size: 20px;
+  font-size: 22px; /* 增加文字大小 */
   margin-bottom: 20px;
   line-height: 1.8;
 }
@@ -147,21 +163,34 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Hero Section */
   .hero-content h1 {
-    font-size: 40px;
+    font-size: 45px; /* 更小屏幕时适当减小标题字体 */
   }
 
   .hero-content p {
-    font-size: 18px;
+    font-size: 20px; /* 更小屏幕时适当减小文字 */
   }
 
+  /* Section Fonts */
+  .section-about h2 {
+    font-size: 36px; /* 在小屏幕上减小标题字体 */
+  }
+
+  .section-about p {
+    font-size: 18px; /* 在小屏幕上减小文字 */
+  }
+
+  /* Button */
   .cta-btn {
-    font-size: 18px;
+    font-size: 16px;
     padding: 12px 25px;
   }
 
+  /* Header navigation */
   header nav ul {
     flex-direction: column;
     gap: 15px;
   }
 }
+
