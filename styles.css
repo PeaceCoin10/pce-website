@@ -7,8 +7,8 @@ html, body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: white; /* All text color set to white */
-  font-family: Arial, sans-serif;
+  color: #f0f0f0; /* 全部字体颜色改为白色 */
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
 }
 
@@ -47,10 +47,10 @@ header nav ul li a:hover {
 
 /* Section Styles */
 section {
-  padding: 80px 20px; /* Increased padding to move text down */
+  padding: 60px 20px;
   text-align: center;
   margin: 10px 0;
-  color: white;
+  color: #fff;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -58,10 +58,57 @@ section {
   flex-direction: column;
 }
 
-.section-about, .section-whitepaper, .section-contact, .section-laws, .section-partners, .section-smart-contract {
-  background-color: transparent;
+/* About Section */
+.section-about {
+  padding-top: 100px; /* 让"欢迎"和简介往下移动 */
 }
 
+.section-about h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.section-about p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.cta-btn {
+  background-color: #2b7a78;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: #e63946;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2b7a78;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+
+/* Partner Logos */
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.partner-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Legal & Smart Contract Sections */
 .section-content h2 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -72,53 +119,10 @@ section {
   margin-bottom: 20px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-.partner-logos {
-  display: flex;
-  justify-content: center;
-  gap: 40px; /* Increased gap for larger logos */
-  margin-top: 30px;
-}
-
-.partner-logo {
-  width: 150px; /* Increased logo size */
-  height: auto;
-  background-color: transparent;
-}
-
-.partner-logo:hover {
-  opacity: 0.8;
-}
-
-/* Whitepaper Download Button */
-.whitepaper-btn {
-  background-color: #2b7a78; /* Green color */
-  padding: 15px 30px;
-  color: white;
-  text-decoration: none;
+/* Contact Section */
+.contact-info {
   font-size: 18px;
-  border-radius: 5px;
   margin-top: 20px;
-}
-
-.whitepaper-btn:hover {
-  background-color: #3c9b8d;
-}
-
-/* Footer Styles */
-footer {
-  background-color: #2b7a78;
-  text-align: center;
-  padding: 20px 0;
-  color: white;
 }
 
 /* Responsive Design */
