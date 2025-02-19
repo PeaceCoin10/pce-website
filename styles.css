@@ -7,7 +7,7 @@ html, body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #f0f0f0;
+  color: #f0f0f0; /* 全部字体颜色改为白色 */
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
 }
@@ -58,56 +58,94 @@ section {
   flex-direction: column;
 }
 
-/* Hero Section */
-.hero-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+/* About Section */
+.section-about {
+  padding-top: 150px; /* 让"欢迎"和简介往下移动 */
 }
 
-.hero-section h1 {
-  font-size: 3em;
+.section-about h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.section-about p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.8;
 }
 
 .cta-btn {
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #e63946;
-  border: none;
-  border-radius: 5px;
+  background-color: #2b7a78;
   color: white;
+  padding: 15px 30px;
+  font-size: 18px;
   text-decoration: none;
+  border-radius: 5px;
 }
 
 .cta-btn:hover {
-  background-color: #f1faee;
-  color: #e63946;
+  background-color: #e63946;
 }
 
-/* Partners Section */
-.section-partners .partner-logos {
+/* Footer Styles */
+footer {
+  background-color: #2b7a78;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+
+/* Partner Logos */
+.partner-logos {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   margin-top: 20px;
 }
 
 .partner-logo {
-  width: 80px;
-  height: 40px;
-  object-fit: contain;
+  width: 150px;
+  height: auto;
 }
 
-/* Footer Section */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
+/* Legal & Smart Contract Sections */
+.section-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
+
+.section-content p, .section-content ul {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-info {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .cta-btn {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 
 
 
