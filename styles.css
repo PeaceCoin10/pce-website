@@ -1,60 +1,20 @@
-/* General Styles */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-image: url('images/hero-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #f0f0f0; /* 全部字体颜色改为白色 */
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+/* Hero Section */
+.hero-section {
+  padding: 120px 20px 60px; /* 增加顶部 padding 让内容下移 */
 }
 
-/* Header Section */
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  background-color: transparent;
-  color: white;
-}
-
-header nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px; /* 增加字体大小 */
-  padding: 10px;
-  font-weight: bold; /* 加粗文字 */
+.hero-content h1, .hero-content p {
+  margin-top: 50px; /* 下移文字 */
   background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
-  border-radius: 5px;
-}
-
-header nav ul li a:hover {
-  background-color: #e63946;
-  border-radius: 5px;
+  padding: 15px;
+  font-size: 40px; /* 增加字体大小 */
+  font-weight: bold; /* 加粗文字 */
+  border-radius: 10px;
 }
 
 /* Section Styles */
 section {
-  padding: 60px 20px;
+  padding: 140px 20px 60px; /* 给所有 section 增加顶部 padding */
   text-align: center;
   margin: 10px 0;
   color: #fff;
@@ -63,51 +23,59 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
 }
 
-/* About Section */
-.section-about {
-  padding-top: 150px; /* 让"欢迎"和简介往下移动 */
+/* Adjust section padding for downward content */
+.section-about, .section-whitepaper, .section-contact, .section-laws, .section-partners, .section-smart-contract {
+  padding-top: 100px; /* 让每个 section 内容往下移动 */
 }
 
-.section-about h2 {
+/* Titles with semi-transparent background */
+.section-about h2, .section-whitepaper h2, .section-contact h2, .section-laws h2, .section-smart-contract h2 {
+  margin-top: 50px; /* 下移标题 */
   font-size: 50px; /* 增加字体大小 */
   font-weight: bold; /* 加粗文字 */
-  margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
-  padding: 10px;
+  padding: 15px;
+  border-radius: 10px;
 }
 
-.section-about p {
+/* Paragraphs with semi-transparent background */
+.section-about p, .section-whitepaper p, .section-contact p, .section-laws p, .section-smart-contract p {
+  margin-top: 30px; /* 下移内容 */
   font-size: 24px; /* 增加字体大小 */
   font-weight: bold; /* 加粗文字 */
-  margin-bottom: 20px;
-  line-height: 1.8;
   background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
-  padding: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  line-height: 1.8;
 }
 
+/* Add extra space for buttons */
 .cta-btn {
-  background-color: #2b7a78;
-  color: white;
-  padding: 15px 30px;
+  margin-top: 40px; /* 给按钮增加间距 */
   font-size: 20px; /* 增加字体大小 */
   font-weight: bold; /* 加粗文字 */
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: #fff;
   text-decoration: none;
-  border-radius: 5px;
 }
 
 .cta-btn:hover {
   background-color: #e63946;
+  border-radius: 10px;
 }
 
 /* Footer Styles */
 footer {
+  padding: 40px 0 20px; /* 增加 footer 上方的间距 */
   background-color: #2b7a78;
-  text-align: center;
-  padding: 20px 0;
   color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* Partner Logos */
