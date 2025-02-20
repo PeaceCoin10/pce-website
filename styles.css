@@ -23,7 +23,6 @@ header {
   align-items: center;
   padding: 20px 0;
   background-color: transparent;
-  color: white;
 }
 
 header nav ul {
@@ -45,47 +44,6 @@ header nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* Hero Section */
-.hero-section {
-  padding: 120px 20px 60px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* 设置高度为视口高度 */
-  z-index: 5;
-}
-
-/* Full-screen semi-transparent background */
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* 设置一个较轻的全屏半透明背景 */
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 56px;
-  font-weight: bold;
-  margin-top: 0;
-}
-
-.hero-content p {
-  font-size: 24px;
-  font-weight: 300;
-  margin-top: 20px;
-}
-
 /* Section Styles */
 section {
   padding: 60px 20px;
@@ -101,17 +59,16 @@ section {
 
 /* About Section */
 .section-about {
-  padding-top: 150px; /* 让"欢迎"和简介往下移动 */
+  padding-top: 150px;
 }
 
 .section-about h2 {
-  font-size: 48px; /* 增加标题字体大小 */
-  font-weight: bold;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
 .section-about p {
-  font-size: 22px; /* 增加文字大小 */
+  font-size: 20px;
   margin-bottom: 20px;
   line-height: 1.8;
 }
@@ -150,50 +107,37 @@ footer {
   height: auto;
 }
 
-/* Legal & Smart Contract Sections */
-.section-content h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.section-content p, .section-content ul {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
 /* Contact Section */
 .contact-info {
   font-size: 18px;
   margin-top: 20px;
 }
 
+/* Ensuring clickable email is white and underlined */
+.email-link {
+  color: white;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  /* Hero Section */
   .hero-content h1 {
-    font-size: 45px; /* 更小屏幕时适当减小标题字体 */
+    font-size: 40px;
   }
 
   .hero-content p {
-    font-size: 20px; /* 更小屏幕时适当减小文字 */
+    font-size: 18px;
   }
 
-  /* Section Fonts */
-  .section-about h2 {
-    font-size: 36px; /* 在小屏幕上减小标题字体 */
-  }
-
-  .section-about p {
-    font-size: 18px; /* 在小屏幕上减小文字 */
-  }
-
-  /* Button */
   .cta-btn {
-    font-size: 16px;
+    font-size: 18px;
     padding: 12px 25px;
   }
 
-  /* Header navigation */
   header nav ul {
     flex-direction: column;
     gap: 15px;
