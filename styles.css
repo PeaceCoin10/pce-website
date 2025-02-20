@@ -123,6 +123,37 @@ footer {
   text-decoration: underline;
 }
 
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #2b7a78;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-content h1 {
@@ -143,6 +174,7 @@ footer {
     gap: 15px;
   }
 }
+
 
   }
 }
