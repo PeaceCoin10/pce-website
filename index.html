@@ -8,195 +8,6 @@
   <meta name="author" content="PCE Official">
   <title>PCE Official Website</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Additional inline styling to ensure text is moved down and button is styled */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-image: url('images/hero-bg.png');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    /* Header Section */
-    header {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 10;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px 0;
-      background-color: transparent;
-      color: white;
-    }
-
-    header nav ul {
-      list-style-type: none;
-      padding: 0;
-      display: flex;
-      gap: 20px;
-    }
-
-    header nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      padding: 10px;
-    }
-
-    header nav ul li a:hover {
-      background-color: #e63946;
-      border-radius: 5px;
-    }
-
-    /* Section Styles */
-    section {
-      padding: 60px 20px;
-      text-align: center;
-      margin: 10px 0;
-      color: #fff;
-      background-color: transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    /* About Section */
-    .section-about {
-      padding-top: 150px;
-    }
-
-    .section-about h2 {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-
-    .section-about p {
-      font-size: 20px;
-      margin-bottom: 20px;
-      line-height: 1.8;
-    }
-
-    .cta-btn {
-      background-color: #2b7a78;
-      color: white;
-      padding: 15px 30px;
-      font-size: 18px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .cta-btn:hover {
-      background-color: #e63946;
-    }
-
-    /* Footer Styles */
-    footer {
-      background-color: #2b7a78;
-      text-align: center;
-      padding: 20px 0;
-      color: white;
-    }
-
-    /* Partner Logos */
-    .partner-logos {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 20px;
-    }
-
-    .partner-logo {
-      width: 150px;
-      height: auto;
-    }
-
-    /* Legal & Smart Contract Sections */
-    .section-content h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .section-content p, .section-content ul {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    /* Contact Section */
-    .contact-info {
-      font-size: 18px;
-      margin-top: 20px;
-    }
-
-    .email-link {
-      color: white;
-      text-decoration: none;
-    }
-
-    .email-link:hover {
-      text-decoration: underline;
-    }
-
-    /* Contact Form */
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .contact-form input[type="email"] {
-      padding: 10px;
-      font-size: 16px;
-      width: 300px;
-      border: none;
-      border-radius: 5px;
-    }
-
-    .contact-form button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #e63946;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .contact-form button:hover {
-      background-color: #2b7a78;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 40px;
-      }
-
-      .hero-content p {
-        font-size: 18px;
-      }
-
-      .cta-btn {
-        font-size: 18px;
-        padding: 12px 25px;
-      }
-
-      header nav ul {
-        flex-direction: column;
-        gap: 15px;
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -262,7 +73,7 @@
     </div>
   </section>
 
-  <!-- Our Partners Section -->
+  <!-- Partners Section -->
   <section id="partners" class="section-partners">
     <div class="section-content">
       <h2>Our Partners</h2>
@@ -277,7 +88,7 @@
     </div>
   </section>
 
-  <!-- Legal Disclaimer & Compliance Section -->
+  <!-- Legal Section -->
   <section id="laws" class="section-laws">
     <div class="section-content">
       <h2>Legal Disclaimer & Compliance</h2>
@@ -290,18 +101,19 @@
     </div>
   </section>
 
-  <!-- Contact Us Section -->
+  <!-- Contact Section -->
   <section id="contact" class="section-contact">
     <div class="section-content">
       <h2>Contact Us</h2>
-      <p>You can contact the PCE project development team via email at: <a href="mailto:peacecoin15@gmail.com" class="email-link">peacecoin15@gmail.com</a></p>
-      <p>Join the PCE Anti-War Alliance Newsletter. Get the latest updates on developments, announcements, and PCE coin news.</p>
-      <p>Enter your email address in the form below:</p>
+      <p>If you have any questions or would like to get in touch, please contact us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:peacecoin15@gmail.com">peacecoin15@gmail.com</a></p>
 
-      <div class="contact-form">
-        <input type="email" placeholder="Enter your email address" required>
-        <button type="submit">Subscribe</button>
-      </div>
+      <!-- Newsletter Subscription Form -->
+      <form action="#" method="post" class="newsletter-form">
+        <label for="email">Subscribe to PCE's Monthly Newsletter:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="cta-btn">Subscribe</button>
+      </form>
     </div>
   </section>
 
