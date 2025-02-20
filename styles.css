@@ -23,6 +23,7 @@ header {
   align-items: center;
   padding: 20px 0;
   background-color: transparent;
+  color: white;
 }
 
 header nav ul {
@@ -44,6 +45,49 @@ header nav ul li a:hover {
   border-radius: 5px;
 }
 
+/* Hero Section */
+.hero-section {
+  padding: 120px 20px 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 设置为全屏高度 */
+  text-align: center;
+}
+
+/* Hero Background Overlay */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 半透明黑色背景 */
+  z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+  z-index: 2; /* 确保文字位于背景之上 */
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: bold;
+  margin-top: 50px; /* 让标题下移 */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* 给文字加点阴影，增强对比度 */
+}
+
+.hero-content p {
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* 给文字加点阴影，增强对比度 */
+}
+
 /* Section Styles */
 section {
   padding: 60px 20px;
@@ -59,16 +103,17 @@ section {
 
 /* About Section */
 .section-about {
-  padding-top: 150px;
+  padding-top: 150px; /* 让"欢迎"和简介往下移动 */
 }
 
 .section-about h2 {
-  font-size: 40px;
+  font-size: 48px; /* 增加标题字体大小 */
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
 .section-about p {
-  font-size: 20px;
+  font-size: 22px; /* 增加文字大小 */
   margin-bottom: 20px;
   line-height: 1.8;
 }
@@ -107,73 +152,56 @@ footer {
   height: auto;
 }
 
+/* Legal & Smart Contract Sections */
+.section-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section-content p, .section-content ul {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
 /* Contact Section */
 .contact-info {
   font-size: 18px;
   margin-top: 20px;
 }
 
-/* Ensuring clickable email is white and underlined */
-.email-link {
-  color: white;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-}
-
-/* Contact Form */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.contact-form input[type="email"] {
-  padding: 10px;
-  font-size: 16px;
-  width: 300px;
-  border: none;
-  border-radius: 5px;
-}
-
-.contact-form button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #e63946;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #2b7a78;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Hero Section */
   .hero-content h1 {
-    font-size: 40px;
+    font-size: 45px; /* 更小屏幕时适当减小标题字体 */
   }
 
   .hero-content p {
-    font-size: 18px;
+    font-size: 20px; /* 更小屏幕时适当减小文字 */
   }
 
+  /* Section Fonts */
+  .section-about h2 {
+    font-size: 36px; /* 在小屏幕上减小标题字体 */
+  }
+
+  .section-about p {
+    font-size: 18px; /* 在小屏幕上减小文字 */
+  }
+
+  /* Button */
   .cta-btn {
-    font-size: 18px;
+    font-size: 16px;
     padding: 12px 25px;
   }
 
+  /* Header navigation */
   header nav ul {
     flex-direction: column;
     gap: 15px;
   }
 }
+
 
 
   }
