@@ -94,11 +94,16 @@ section {
   text-align: center;
   margin: 10px 0;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.7); /* 添加半透明黑色背景 */
+  background-color: transparent; /* 默认透明背景 */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+/* Add background overlay when scrolled */
+section.scrolled {
+  background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
   border-radius: 8px; /* 添加圆角 */
 }
 
