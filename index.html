@@ -11,9 +11,6 @@
 </head>
 <body>
 
-  <!-- Added Overlay for Background -->
-  <div class="background-overlay"></div>
-
   <!-- Header Section (Navigation Menu) -->
   <header>
     <nav>
@@ -175,7 +172,7 @@
       <p><strong>Email:</strong> <a href="mailto:peacecoin15@zohomail.cn">peacecoin15@zohomail.cn</a></p>
       <p><strong>Official Email Notice:</strong> This is our official email, and it is publicly listed for verification purposes.</p>
       
-      <!-- Newsletter Subscription Form -->
+      <!-- Newsletter Subscription Form Ascending Form -->
       <form action="#" method="post" class="newsletter-form">
         <label for="email">Subscribe to PCE's Monthly Newsletter:</label>
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
@@ -189,6 +186,22 @@
     <p>© 2025 Peace Coin Ecosystem. All rights reserved.</p>
     <p>Official Contact Email: <a href="mailto:peacecoin15@zohomail.cn">peacecoin15@zohomail.cn</a></p>
   </footer>
+
+  <!-- JavaScript for dynamic background overlay -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section:not(#home)');
+      const scrollPosition = window.scrollY;
+
+      sections.forEach(section => {
+        if (scrollPosition > 50) { // Adjust this value to control when the overlay appears
+          section.classList.add('scrolled');
+        } else {
+          section.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
